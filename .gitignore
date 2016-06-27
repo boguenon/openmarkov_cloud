@@ -50,6 +50,7 @@ Temporary Items
 .settings/
 build/
 WebContent/launcher/ux/
+WebContent/launcher/themes/
 WebContent/WEB-INF/lib/*.*
 temp/
 upload/

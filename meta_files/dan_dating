@@ -1,0 +1,236 @@
+<item uid="dan_dating"><probnet><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      &quot;The dating problem&quot;, proposed in:
+    </p>
+    <p style="margin-top: 0">
+      
+    </p>
+    <p style="margin-top: 0">
+      T. D. Nielsen and F. Jensen, &quot;Representing and solving asymmetric 
+      bayesian decision problems,&quot; in <i>Proceedings of the 16th Annual 
+      Conference on Uncertainty in Artificial Intelligence</i> (UAI-2000), (S 
+      an Francisco, CA), pp. 416&#8211;425, Morgan Kaufmann, 2000.
+    </p>
+    <p style="margin-top: 0">
+      
+    </p>
+    <p style="margin-top: 0">
+      It is described as follows:
+    </p>
+    <p style="margin-top: 0">
+      &quot;Joe has to decide whether or not to ask a girl he has recently met on a 
+      date. If Joe decides ot to ask her out he can choose either to stay at 
+      home and watch TV or visit a night club; before taking that decision Joe 
+      observes what programs will be on TV that night. The pleasure of staying 
+      at home is influenced by his liking of the program watched, whereas the 
+      pleasure of going to a night club is dependent on the comfort of going 
+      to that night club and the entrance fee; comfort is dependent on whether 
+      Joe likes the night club and whether he meets any friends there.
+    </p>
+    <p style="margin-top: 0">
+      
+    </p>
+    <p style="margin-top: 0">
+      If Joe decides to ask her out her response will depend on her feelings 
+      towards him. If she declunes the date, Joe can decide to go to a night 
+      club or stay at home and watch TV; we assume that the two &quot;staying at 
+      home scenarios are the same&quot;. If she accepts to go on a date with him, 
+      Joe will ask her whether she wants to go to a restaurant or to the 
+      movies. The choice of movie (decided by Joe) may influence her mood 
+      which in turn may influence Joe's satisfaction concerning the evening. 
+      Similarly, the choice of the menu (decided by Joe) might influence Joe's 
+      satisfaction.&quot;
+    </p>
+  </body>
+</html>]]></comment></probnet><nodes type="DAN" typename="DAN"><node h="22" name="chance" role="chance" shape="circle" sid="785b8a1d-273044dd" type="finiteStates" w="102" x="262" y="345"><label><![CDATA[Accept]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Whether Emily accepts to go out on a date with Joe.
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="no"/><state name="yes"/></states><unit/></node><node h="22" name="chance" role="chance" shape="circle" sid="aaedc471-6097467d" type="finiteStates" w="102" x="385" y="424"><label><![CDATA[ToDo]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Emily's choice about what to do on the date: either watch a movie or go 
+      to a restaurant. (It is a chance node instead of a decision because in 
+      this problem Joe is the decision maker and Emily's decisions are not 
+      under his control.)
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="restaurant"/><state name="movie"/></states><unit/></node><node h="22" name="chance" role="chance" shape="circle" sid="abcb2729-ebc54800" type="finiteStates" w="102" x="181" y="463"><label><![CDATA[LikesMe]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Whether Emily likes Joe.
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="no"/><state name="yes"/></states><unit/></node><node h="22" name="chance" role="chance" shape="circle" sid="2391d1c9-075b49e8" type="finiteStates" w="102" x="415" y="30"><label><![CDATA[TV]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Whether Joe likes the TV programme. (Liking it does not imply watching 
+      it.)
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="good"/><state name="bad"/></states><unit/></node><node h="22" name="chance" role="chance" shape="circle" sid="ca82b144-790a4ec2" type="finiteStates" w="102" x="581" y="73"><label><![CDATA[TVExp]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Whether Joe enjoys watching the TV programme. (He might not enjoy it 
+      either because he doesn't like it or because he doesn't watch it.)
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="negative"/><state name="positive"/></states><unit/></node><node h="22" name="chance" role="chance" shape="circle" sid="47f49e6f-9d2047ea" type="finiteStates" w="102" x="578" y="154"><label><![CDATA[Club]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Whether Joe likes the night club he visits.
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="negative"/><state name="positive"/></states><unit/></node><node h="22" name="chance" role="chance" shape="circle" sid="fe86bd75-b2734868" type="finiteStates" w="102" x="583" y="216"><label><![CDATA[MeetFr]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Whether Joe meets his friends at the night club.
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="negative"/><state name="positive"/></states><unit/></node><node h="22" name="chance" role="chance" shape="circle" sid="314b9931-fb9b44a6" type="finiteStates" w="102" x="720" y="179"><label><![CDATA[NCExp]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Whether Joe enjoys or not going to a night club.
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="negative"/><state name="positive"/></states><unit/></node><node h="22" name="chance" role="chance" shape="circle" sid="52cee14d-501e4622" type="finiteStates" w="102" x="643" y="309"><label><![CDATA[mMood]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Emily's mood at the movie.
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="bad"/><state name="good"/></states><unit/></node><node h="22" name="chance" role="chance" shape="circle" sid="c3f53bcc-21b14002" type="finiteStates" w="102" x="740" y="371"><label><![CDATA[mExp]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Joe's experience at the movie.
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="negative"/><state name="positive"/></states><unit/></node><node h="22" name="chance" role="chance" shape="circle" sid="e89654b1-4d9043e7" type="finiteStates" w="102" x="648" y="433"><label><![CDATA[rMood]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Emily's mood at the restaurant.
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="bad"/><state name="good"/></states><unit/></node><node h="22" name="chance" role="chance" shape="circle" sid="04b1b884-9a814a36" type="finiteStates" w="102" x="756" y="491"><label><![CDATA[rExp]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Joe's experience at the restaurant.
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="negative"/><state name="positive"/></states><unit/></node><node h="22" name="decision" role="decision" shape="rect" sid="734316dc-08364433" type="finiteStates" w="102" x="117" y="237"><label><![CDATA[Ask?]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Decision of asking Emily on a date or not. If he decides to ask, the 
+      variable <i>Accept </i>is revealed; otherwise it is totally restricted. 
+      Therefore the variable <i>Accept</i> makes sense only he decides to ask.
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="no"/><state name="yes"/></states><unit/></node><node h="22" name="decision" role="decision" shape="rect" sid="f1ad428c-9d574d49" type="finiteStates" w="102" x="370" y="176"><label><![CDATA[NClub?]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Decision of visiting a night club or not (and therefore staying at home).
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="no"/><state name="yes"/></states><unit/></node><node h="22" name="decision" role="decision" shape="rect" sid="28d77bd7-11b648c6" type="finiteStates" w="102" x="540" y="371"><label><![CDATA[Movie]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Joe's choice of movie: an action movie or a romantic comedy.
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="romantic"/><state name="action"/></states><unit/></node><node h="22" name="decision" role="decision" shape="rect" sid="6f50e1a6-cf2d4331" type="finiteStates" w="102" x="541" y="491"><label><![CDATA[Rest]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Joe's choice of menu: expensive or cheap.
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="cheap"/><state name="expensive"/></states><unit/></node><node h="22" name="utility" role="utility" shape="rhombus" sid="f4928e26-528e4929" type="numeric" w="102" x="861" y="73"><label><![CDATA[U TVExp]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Pleasure of watching TV.
+    </p>
+  </body>
+</html>]]></comment><property/><unit/></node><node h="22" name="utility" role="utility" shape="rhombus" sid="9bf2e6b0-4e3f4e87" type="numeric" w="102" x="864" y="181"><label><![CDATA[U NCExp]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Fun at the night club.
+    </p>
+  </body>
+</html>]]></comment><property/><unit/></node><node h="22" name="utility" role="utility" shape="rhombus" sid="eb6afd96-32194cc9" type="numeric" w="102" x="863" y="371"><label><![CDATA[U mExp]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      How much Joe enjoys going to a movie with Emily.
+    </p>
+  </body>
+</html>]]></comment><property/><unit/></node><node h="22" name="utility" role="utility" shape="rhombus" sid="a14c9c42-0dd44163" type="numeric" w="102" x="870" y="491"><label><![CDATA[U rExp]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      How much Joe enjoys going to a restaurant with Emily.
+    </p>
+  </body>
+</html>]]></comment><property/><unit/></node></nodes><links><link dashstyle="F" directed="T" from="785b8a1d-273044dd" to="f1ad428c-9d574d49"><potential role="linkRestriction" type="Table"><variables><variable name="Accept"/><variable name="NClub?"/></variables><values>1.0 0.0 1.0 0.0</values></potential></link><link dashstyle="F" directed="T" from="785b8a1d-273044dd" to="aaedc471-6097467d"><potential role="linkRestriction" type="Table"><variables><variable name="Accept"/><variable name="ToDo"/></variables><values>0.0 1.0 0.0 1.0</values></potential><revealing_condition><states><state name="yes"/></states></revealing_condition></link><link dashstyle="F" directed="T" from="aaedc471-6097467d" to="28d77bd7-11b648c6"><potential role="linkRestriction" type="Table"><variables><variable name="ToDo"/><variable name="Movie"/></variables><values>0.0 1.0 0.0 1.0</values></potential></link><link dashstyle="F" directed="T" from="aaedc471-6097467d" to="6f50e1a6-cf2d4331"><potential role="linkRestriction" type="Table"><variables><variable name="ToDo"/><variable name="Rest"/></variables><values>1.0 0.0 1.0 0.0</values></potential></link><link dashstyle="F" directed="T" from="abcb2729-ebc54800" to="785b8a1d-273044dd"/><link dashstyle="F" directed="T" from="abcb2729-ebc54800" to="aaedc471-6097467d"/><link dashstyle="F" directed="T" from="2391d1c9-075b49e8" to="ca82b144-790a4ec2"/><link dashstyle="F" directed="T" from="ca82b144-790a4ec2" to="f4928e26-528e4929"/><link dashstyle="F" directed="T" from="47f49e6f-9d2047ea" to="314b9931-fb9b44a6"/><link dashstyle="F" directed="T" from="fe86bd75-b2734868" to="314b9931-fb9b44a6"/><link dashstyle="F" directed="T" from="314b9931-fb9b44a6" to="9bf2e6b0-4e3f4e87"/><link dashstyle="F" directed="T" from="52cee14d-501e4622" to="c3f53bcc-21b14002"/><link dashstyle="F" directed="T" from="c3f53bcc-21b14002" to="eb6afd96-32194cc9"/><link dashstyle="F" directed="T" from="e89654b1-4d9043e7" to="04b1b884-9a814a36"/><link dashstyle="F" directed="T" from="04b1b884-9a814a36" to="a14c9c42-0dd44163"/><link dashstyle="F" directed="T" from="734316dc-08364433" to="f1ad428c-9d574d49"><potential role="linkRestriction" type="Table"><variables><variable name="Ask?"/><variable name="NClub?"/></variables><values>1.0 0.0 1.0 0.0</values></potential></link><link dashstyle="F" directed="T" from="734316dc-08364433" to="785b8a1d-273044dd"><potential role="linkRestriction" type="Table"><variables><variable name="Ask?"/><variable name="Accept"/></variables><values>0.0 1.0 0.0 1.0</values></potential><revealing_condition><states><state name="yes"/><state name="no"/></states></revealing_condition></link><link dashstyle="F" directed="T" from="f1ad428c-9d574d49" to="47f49e6f-9d2047ea"><potential role="linkRestriction" type="Table"><variables><variable name="NClub?"/><variable name="Club"/></variables><values>0.0 1.0 0.0 1.0</values></potential><revealing_condition><states><state name="yes"/></states></revealing_condition></link><link dashstyle="F" directed="T" from="f1ad428c-9d574d49" to="fe86bd75-b2734868"><potential role="linkRestriction" type="Table"><variables><variable name="NClub?"/><variable name="MeetFr"/></variables><values>0.0 1.0 0.0 1.0</values></potential><revealing_condition><states><state name="yes"/></states></revealing_condition></link><link dashstyle="F" directed="T" from="f1ad428c-9d574d49" to="ca82b144-790a4ec2"><potential role="linkRestriction" type="Table"><variables><variable name="NClub?"/><variable name="TVExp"/></variables><values>1.0 0.0 1.0 0.0</values></potential><revealing_condition><states><state name="no"/></states></revealing_condition></link><link dashstyle="F" directed="T" from="28d77bd7-11b648c6" to="52cee14d-501e4622"/><link dashstyle="F" directed="T" from="28d77bd7-11b648c6" to="c3f53bcc-21b14002"><revealing_condition><states><state name="action"/><state name="romantic"/></states></revealing_condition></link><link dashstyle="F" directed="T" from="6f50e1a6-cf2d4331" to="e89654b1-4d9043e7"/><link dashstyle="F" directed="T" from="6f50e1a6-cf2d4331" to="04b1b884-9a814a36"><revealing_condition><states><state name="expensive"/><state name="cheap"/></states></revealing_condition></link></links><potentials><potential role="conditionalProbability" type="Table"><variables><variable name="Accept"/><variable name="Ask?"/><variable name="LikesMe"/></variables><values>0.0 0.0 0.99 0.01 0.0 0.0 0.25 0.75</values></potential><potential role="conditionalProbability" type="Table"><variables><variable name="ToDo"/><variable name="Accept"/><variable name="LikesMe"/></variables><values>0.0 0.0 0.65 0.35 0.0 0.0 0.15 0.85</values></potential><potential role="conditionalProbability" type="Uniform"><variables><variable name="LikesMe"/></variables><values/></potential><potential role="conditionalProbability" type="Table"><variables><variable name="TV"/></variables><values>0.15 0.85</values></potential><potential role="conditionalProbability" type="Table"><variables><variable name="TVExp"/><variable name="NClub?"/><variable name="TV"/></variables><values>0.0 1.0 0.0 0.0 1.0 0.0 0.0 0.0</values></potential><potential role="conditionalProbability" type="Table"><variables><variable name="Club"/><variable name="NClub?"/></variables><values>0.0 0.0 0.22 0.78</values></potential><potential role="conditionalProbability" type="Table"><variables><variable name="MeetFr"/><variable name="NClub?"/></variables><values>0.0 0.0 0.16 0.84</values></potential><potential role="conditionalProbability" type="ICIModel"><variables><variable name="NCExp"/><variable name="MeetFr"/><variable name="Club"/></variables><values/><subpotentials><potential role="" type="Table"><variables><variable name="NCExp"/><variable name="MeetFr"/></variables><values>1.0 0.0 0.0 1.0</values></potential></subpotentials><model>OR / MAX</model></potential></potentials></item>

@@ -1,0 +1,49 @@
+<item uid="dan_reactor"><probnet/><nodes type="DAN" typename="DAN"><node h="47" name="chance" role="chance" shape="circle" sid="971a9639-05d44978" type="finiteStates" w="102" x="473" y="321"><label><![CDATA[Result of advanced reactor]]></label><property/><states><state name="success"/><state name="limited accident"/><state name="major accident"/></states><unit/></node><node h="33" name="chance" role="chance" shape="circle" sid="4b9427ba-8cc14171" type="finiteStates" w="102" x="310" y="147"><label><![CDATA[Result of test]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      The result of the test of of critical components of the advanced reactor.
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="bad"/><state name="good"/><state name="excellent"/></states><unit/></node><node h="47" name="chance" role="chance" shape="circle" sid="015eb3fa-5c674e06" type="finiteStates" w="102" x="174" y="323"><label><![CDATA[Result of conventional reactor]]></label><property/><states><state name="success"/><state name="failure"/></states><unit/></node><node h="33" name="chance" role="chance" shape="circle" sid="c7ce0718-33b746ec" type="finiteStates" w="102" x="473" y="69"><label><![CDATA[Quality of components]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Represents the quality of critical components to build an advanced 
+      reactor.
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="bad"/><state name="good"/><state name="excellent"/></states><unit/></node><node h="33" name="decision" role="decision" shape="rect" sid="a9a0e83c-1b124d53" type="finiteStates" w="102" x="146" y="64"><label><![CDATA[Test decision]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      Represents the decision over to do or not the test of the critical 
+      components of an advanced reactor
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="test"/><state name="notest"/></states><unit/></node><node h="33" name="decision" role="decision" shape="rect" sid="289b6846-2853429d" type="finiteStates" w="102" x="310" y="233"><label><![CDATA[Build decision]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      The decision over what kind of reactor to build (or not to build a 
+      reactor at all).
+    </p>
+  </body>
+</html>]]></comment><property/><states><state name="build advanced"/><state name="build conventional"/><state name="build none"/></states><unit/></node><node h="33" name="utility" role="utility" shape="rhombus" sid="a8fd960a-94264d15" type="numeric" w="102" x="146" y="141"><label><![CDATA[Cost of test]]></label><comment><![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      The cost of the test of of critical components of the advanced reactor.
+    </p>
+  </body>
+</html>]]></comment><property/><unit/></node><node h="47" name="utility" role="utility" shape="rhombus" sid="fb3679c7-0d4447c5" type="numeric" w="102" x="473" y="397"><label><![CDATA[Benefit of advanced reactor]]></label><property/><unit/></node><node h="47" name="utility" role="utility" shape="rhombus" sid="d6621391-8977494a" type="numeric" w="102" x="174" y="395"><label><![CDATA[Benefit of conventional reactor]]></label><property/><unit/></node></nodes><links><link dashstyle="F" directed="T" from="971a9639-05d44978" to="fb3679c7-0d4447c5"/><link dashstyle="F" directed="T" from="4b9427ba-8cc14171" to="289b6846-2853429d"><potential role="linkRestriction" type="Table"><variables><variable name="Result of test"/><variable name="Build decision"/></variables><values>0.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0</values></potential></link><link dashstyle="F" directed="T" from="015eb3fa-5c674e06" to="d6621391-8977494a"/><link dashstyle="F" directed="T" from="c7ce0718-33b746ec" to="4b9427ba-8cc14171"/><link dashstyle="F" directed="T" from="c7ce0718-33b746ec" to="971a9639-05d44978"/><link dashstyle="F" directed="T" from="a9a0e83c-1b124d53" to="a8fd960a-94264d15"/><link dashstyle="F" directed="T" from="a9a0e83c-1b124d53" to="4b9427ba-8cc14171"><potential role="linkRestriction" type="Table"><variables><variable name="Test decision"/><variable name="Result of test"/></variables><values>1.0 0.0 1.0 0.0 1.0 0.0</values></potential><revealing_condition><states><state name="test"/></states></revealing_condition></link><link dashstyle="F" directed="T" from="a9a0e83c-1b124d53" to="289b6846-2853429d"/><link dashstyle="F" directed="T" from="289b6846-2853429d" to="971a9639-05d44978"><potential role="linkRestriction" type="Table"><variables><variable name="Build decision"/><variable name="Result of advanced reactor"/></variables><values>1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0</values></potential><revealing_condition><states><state name="build advanced"/></states></revealing_condition></link><link dashstyle="F" directed="T" from="289b6846-2853429d" to="015eb3fa-5c674e06"><potential role="linkRestriction" type="Table"><variables><variable name="Build decision"/><variable name="Result of conventional reactor"/></variables><values>0.0 1.0 0.0 0.0 1.0 0.0</values></potential><revealing_condition><states><state name="build conventional"/></states></revealing_condition></link></links><potentials><potential role="conditionalProbability" type="Table"><variables><variable name="Result of advanced reactor"/><variable name="Build decision"/><variable name="Quality of components"/></variables><values>0.0 0.7 0.3 0.0 0.0 0.0 0.0 0.0 0.0 0.4 0.46 0.14 0.0 0.0 0.0 0.0 0.0 0.0 0.9 0.06 0.04 0.0 0.0 0.0 0.0 0.0 0.0</values></potential><potential role="conditionalProbability" type="Table"><variables><variable name="Result of test"/><variable name="Test decision"/><variable name="Quality of components"/></variables><values>1.0 0.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0</values></potential><potential role="conditionalProbability" type="Table"><variables><variable name="Result of conventional reactor"/><variable name="Build decision"/></variables><values>0.0 0.0 0.98 0.02 0.0 0.0</values></potential><potential role="conditionalProbability" type="Table"><variables><variable name="Quality of components"/></variables><values>0.1 0.3 0.6</values></potential><potential role="utility" type="Table"><variables><variable name="Test decision"/></variables><values>-1.0 0.0</values><utility_variable name="Cost of test"/></potential><potential role="utility" type="Table"><variables><variable name="Result of advanced reactor"/></variables><values>12.0 -6.0 -10.0</values><utility_variable name="Benefit of advanced reactor"/></potential><potential role="utility" type="Table"><variables><variable name="Result of conventional reactor"/></variables><values>8.0 -4.0</values><utility_variable name="Benefit of conventional reactor"/></potential></potentials></item>
