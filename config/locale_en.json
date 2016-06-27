@@ -1,0 +1,14 @@
+{
+	"110": "Server Too Busy.",
+	"114": "Step node not specified. Invalid request.",
+	"130": "Content is locked for saving.",
+	"200": "Unknown command!",
+	"201": "One or more command parameters missing.",
+	"202": "Invalid request format!",
+	"300": "Content not available for given address.",
+	"303": "Exception while importing file.",
+	"304": "Unauthorized network connection.",
+	"320": "Requested content does not exist.",
+	"321": "Reference item not exist on server.",
+	"900": "Server exception found during operation."
+}

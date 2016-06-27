@@ -1,0 +1,13 @@
+{
+    "server":     {
+        "acceptcount": 10,
+        "defaultlocale": "en_US",
+        "defaultdateformat": "''yy-MM-dd hh:mm:ss a",
+        "idletimeout": 0,
+        "maxthreads": 30,
+        "minthreads": 0,
+        "port": 4504,
+        "session_expire": 600,
+        "enabled": true
+    }
+}

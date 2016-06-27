@@ -1,0 +1,5 @@
+{
+	data: [
+		{lang: "en_US", file: "locale_en.json"}
+	]
+}

@@ -48,3 +48,6 @@ Temporary Items
 .project
 .classpath
 .settings/
+build/
+WebContent/launcher/ux/
+WebContent/WEB-INF/lib/*.*
