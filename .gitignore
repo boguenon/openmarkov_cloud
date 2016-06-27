@@ -51,3 +51,5 @@ Temporary Items
 build/
 WebContent/launcher/ux/
 WebContent/WEB-INF/lib/*.*
+temp/
+upload/
