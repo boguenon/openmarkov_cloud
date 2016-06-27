@@ -117,43 +117,5 @@ Ext.require([
 	</div>
 
  	<div id="main"></div>
- 	<!-- div class="igc-pace igc-pace-active">
- 		<div class="igc-pace-progress" data-progress="50" data-progress-text="50%" style="-webkit-transform: translate3d(50%, 0px, 0px); -ms-transform: translate3d(50%, 0px, 0px); transform: translate3d(50%, 0px, 0px);">
- 			<div class="igc-pace-progress-inner"></div>
- 		</div>
- 		<div class='igc-pace-activity'></div>
- 	</div -->
- 	
- 	<div id="igc_msr" class="igc-popup-main" style="display:none;">
- 		<div class="igc-popup-bg"></div>
- 		<div id="igc_msr_s" class="igc_msr_box">
- 			<table width="100%">
- 				<tr>
- 					<td><div class="igc-msr-title">Sharing Setting</div></td>
- 				</tr>
- 				<tr>
- 					<td><div class="igc-msr-fl">Link to share</div></td>
- 				</tr>
- 				<tr>
- 					<td><div class="igc-msr-inp"><input type="text" id="m_lnk"></input></div></td>
- 				</tr>
- 				<tr>
- 					<td><div class="igc-msr-fl">People</div></td>
- 				</tr>
- 				<tr>
- 					<td><div class="igc-msr-inp"><input id="m_em" type="text" placeholder="Enter names or email addresses..."></input></div></td>
- 				</tr>
- 				<tr>
- 					<td><div class="igc-msr-inp"><textarea id="m_msg" placeholder="Messages..." style="height: 80px"></textarea></div></td>
- 				</tr>
- 				<tr>
- 					<td><div style="height: 14px;"></div></td>
- 				</tr>
- 				<tr>
- 					<td style="textalign:right;"><div class="igc-msr-btn" id="m_done">DONE</div><div class="igc-msr-btn" id="m_close" style="display: none;">CLOSE</div></td>
- 				</tr>
- 			</table>
- 		</div>
- 	</div>
 </body>
 </html>
