@@ -1,0 +1,29 @@
+.icon-caret-up {
+	background: url(../images/main_sprites.png) 0px -660px no-repeat !important;
+}
+
+.icon-caret-down {
+	background: url(../images/main_sprites.png) -20px -660px no-repeat !important;
+}
+
+.icon-caret-right {
+	background: url(../images/main_sprites.png) -40px -662px no-repeat !important;
+}
+
+.icon-caret-left {
+	background: url(../images/main_sprites.png) -60px -662px no-repeat !important;
+}
+
+.icon-welcome {
+	background: url(../images/bog_iconset.png) -140px -280px no-repeat !important;
+}
+
+
+.icon-help {
+	background: url(../images/bog_iconset.png) -160px -280px no-repeat !important;
+}
+
+
+.icon-bigdata {
+	background: url(../images/bog_iconset.png) -100px -280px no-repeat !important;
+}

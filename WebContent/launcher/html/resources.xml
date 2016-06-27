@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smsg>
+   <item name="en_US">
+   	  <li name="S_HOME"><![CDATA[Home]]></li>
+   	  <li name="L_TB_BN"><![CDATA[Found same node name used in this table. Would you like to change all names with changes?]]></li>
+	  <li name="L_ML_C1">Chance Node</li>
+	  <li name="L_ML_C2">Decision Node</li>
+	  <li name="L_ML_C3">Utility Node</li>
+	  <li name="L_ML_C4a">Inference</li>
+	  <li name="L_ML_C4b">Editor</li>
+	  <li name="L_ML_C5">Decision Tree</li>
+	  <li name="L_ML_C6">Cases</li>
+	  <li name="L_ML_C6a">Add Case</li>
+	  <li name="L_ML_C6b">Remove Case</li>
+	  <li name="L_ML_LEARN">Learn</li>
+	  <li name="L_ML_CEFF">Cost Effectiveness Analysis</li>
+	  <li name="L_ML_C7">Load PGMX</li>
+	  <li name="L_ML_CEFF_S">Sensitivity Analysis</li>
+	  <li name="L_ML_CEFF_D">Determistic Analysis</li>
+      <li name="L_ML_C1">Chance</li>
+      <li name="M_ERROR">Error</li>
+      <li name="M_DETAIL">Detail</li>
+      <li name="T_BG_DS">Property</li>
+   </item>
+</smsg>
